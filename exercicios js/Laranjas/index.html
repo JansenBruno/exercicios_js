@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>Informe o total de Laranjas que Joselito possui: </p>
+  <input type=text id="qtslaranja" placeholder="Laranjas" value=""><br><br>
+  <p>Informe a quantidade total de pessoas:  </p>
+  <input type=text id="qtsviz" placeholder="Vizinhos " value=""><br><br>
+  <button id="calc" onclick="calculo()">RESULTADO</button>
+
+
+
+  <script>
+    
+    function calculo(qtdlaranja,qtdviz) {
+      var laranja= document.getElementById("qtslaranja").value;
+      var vizinhos= document.getElementById("qtsviz").value;
+      var divtotal;
+      divtotal =  vizinhos / laranja;
+      document.write ( "Quantidade de laranja para cada pessoa sera de: " +  divtotal );
+      
+    
+
+      
+    
+    }
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
