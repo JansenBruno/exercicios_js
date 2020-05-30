@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+
+<script>
+  var id = prompt("Digite sua idade: ")
+  var permissao = 18
+
+  function verificar(idusuario, idpermitido) {
+    if (idusuario >= idpermitido) {
+      return document.write("voce pode dirigir")
+    } else if (idusuario < idpermitido) {
+      return document.write("voce não pode dirigir")
+    }
+
+  }
+
+  verificar(id, permissao)
+</script>

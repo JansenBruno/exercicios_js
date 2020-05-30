@@ -1,0 +1,41 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora metade e dobro </title>
+</head>
+
+<body>
+
+  <h1>Calculadora</h1>
+  <h2>Quer saber do dobro do valor de qualquer numero? </h2>
+  <p>Digite abaixo: </p>
+  <input type="text" id="numero" placeholder="Insira valor aqui"/>
+  <button id="dobrarvalor" onclick="dobrar()">RESULTADO</button> <br><br>
+
+  <h1>E a metade ?</h1>
+  <input type="text" id="num" placeholder="Insira valor aqui"/>
+  <button id="metadevalor" onclick="metade()">RESULTADO</button>
+
+  
+  <script> 
+  
+  function dobrar(valor) {
+    var valor = document.getElementById("numero").value; 
+    var resultado;
+    resultado = valor * 2
+    document.getElementById("numero").value = resultado;
+  
+  }
+    function metade(val){
+      var val = document.getElementById("num").value;
+      var resultado;
+      resultado = val / 2; 
+      document.getElementById("num").value = resultado; 
+    }
+
+</script>
+
+</body>
+
+</html>
